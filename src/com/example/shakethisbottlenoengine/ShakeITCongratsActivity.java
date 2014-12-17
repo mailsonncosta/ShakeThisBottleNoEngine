@@ -1,11 +1,8 @@
 package com.example.shakethisbottlenoengine;
 
-import org.w3c.dom.Text;
-
-import android.support.v7.app.ActionBarActivity;
-import android.test.suitebuilder.annotation.LargeTest;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;

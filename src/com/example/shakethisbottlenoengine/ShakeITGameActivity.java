@@ -1,7 +1,6 @@
 package com.example.shakethisbottlenoengine;
 
 import java.util.List;
-import java.util.Timer;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;

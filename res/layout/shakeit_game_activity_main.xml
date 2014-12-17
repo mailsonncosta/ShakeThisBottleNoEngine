@@ -15,7 +15,7 @@
         android:layout_height="90dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:text="fail" />
+        android:text="@string/fail" />
 
     <Button
         android:id="@+id/teste_congrats"
@@ -24,7 +24,7 @@
         android:layout_alignBaseline="@+id/teste_fail"
         android:layout_alignBottom="@+id/teste_fail"
         android:layout_alignParentLeft="true"
-        android:text="congrats" />
+        android:text="@string/congrats" />
 
     <TextView
         android:id="@+id/shakeit_test"
