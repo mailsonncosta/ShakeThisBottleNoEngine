@@ -153,6 +153,24 @@ public class MiniGame1 implements BaseGame {
  		}
     	return result;
     }
+
+	@Override
+	public void startGame() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void pauseGame() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void finishGame() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 }

@@ -1,7 +1,5 @@
 package com.example.shakethisbottlenoengine;
 
-import com.example.shakethisbottlenoengine.hitthecircle.HitTheCircleGameActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;

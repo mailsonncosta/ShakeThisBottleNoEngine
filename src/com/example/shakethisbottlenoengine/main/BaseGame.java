@@ -16,5 +16,11 @@ public interface BaseGame {
 	Integer getHighScore();
 
 	String getDescription();
+	
+	void startGame();
+	
+	void pauseGame();
+	
+	void finishGame();
 
 }

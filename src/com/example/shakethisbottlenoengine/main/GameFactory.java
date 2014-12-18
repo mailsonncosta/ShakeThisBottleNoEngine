@@ -7,18 +7,18 @@ package com.example.shakethisbottlenoengine.main;
  */
 public class GameFactory {
 
-	public GameFactory INSTANCE;
+	public static GameFactory INSTANCE;
 	
 	private GameFactory(){};
 
 	/**
 	 * Returns the selected minigame.
-	 * @param Type
+	 * @param minigame1
 	 */
-	public BaseGame getMiniGame(String Type) 
+	public BaseGame getMiniGame(MiniGameType minigame1) 
 	{
 		// TODO - implement GameFactory.getMiniGame
-		if(Type.equals(MiniGameType.MINIGAME1)){
+		if(minigame1.equals(MiniGameType.MINIGAME1)){
 			return new MiniGame1();
 		} else {
 			throw new UnsupportedOperationException();
@@ -30,7 +30,7 @@ public class GameFactory {
 	 * Returns the single instance of GameFactory.
 	 * @return
 	 */
-	public GameFactory getInstance() 
+	public static GameFactory getInstance() 
 	{
 		// TODO - implement GameFactory.getInstance
 		if(INSTANCE == null){

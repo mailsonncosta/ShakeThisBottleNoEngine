@@ -29,7 +29,9 @@
         <activity android:name="ShakeITGameActivity"></activity>
         <activity android:name="ShakeITCongratsActivity"></activity>
         <activity android:name="ShakeITFailActivity"></activity>
-        <activity android:name="ShakeITTryAgainActivity"></activity> 
+        <activity android:name="ShakeITTryAgainActivity"></activity>
+        <activity android:name=".minigame4.GameActivity"></activity>
+        <activity android:name=".minigame4.GameActivity2"></activity>  
         
     </application>
 
