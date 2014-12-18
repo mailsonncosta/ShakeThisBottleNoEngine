@@ -1,5 +1,7 @@
 package com.example.shakethisbottlenoengine;
 
+import com.example.shakethisbottlenoengine.hitthecircle.HitTheCircleGameActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -12,7 +14,7 @@ import android.widget.Button;
 
 public class MainActivity extends ActionBarActivity {
 
-	private Button minigameBt, exitBt;
+	private Button playBt, exitBt;
 	
 	private OnClickListener changingLayouts(final Class<?> nextLayout){
 		return new OnClickListener() {
@@ -33,16 +35,28 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        minigameBt = (Button) findViewById(R.id.minigames_bt);
+        playBt = (Button) findViewById(R.id.minigames_bt);
         exitBt     = (Button) findViewById(R.id.exit_bt);
         
         
-        minigameBt.setOnClickListener(changingLayouts(MiniGameMenuActivity.class));
+        playBt.setOnClickListener(changingLayouts(MiniGameDifficultLevelActivity.class));
         
         exitBt.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) { System.exit(0);}
 		});
+        /*setContentView(R.layout.activity_game);
+        
+        playBt = (Button) findViewById(R.id.play);
+        exitBt     = (Button) findViewById(R.id.exit);
+        
+        
+        playBt.setOnClickListener(changingLayouts(HitTheCircleGameActivity.class));
+        
+        exitBt.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) { System.exit(0);}
+		});*/
 
 
     }

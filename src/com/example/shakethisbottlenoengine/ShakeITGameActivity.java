@@ -23,7 +23,7 @@ public class ShakeITGameActivity extends ActionBarActivity implements SensorEven
 	private Button congratsTestBt, failtestBt;
 	
 	//sensor
-	private countDown sec = new countDown(30);//30 segundos
+	//private countDown sec = new countDown(30);//30 segundos
     private int count = 0;
     
     private TextView texto, timer;
@@ -64,11 +64,11 @@ public class ShakeITGameActivity extends ActionBarActivity implements SensorEven
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     
         //-----timer------
-        synchronized (this) {
+       /* synchronized (this) {
         	sec.run();
             timer.setText("" + sec.getSec());
 		}
-                
+                */
     }
 
 

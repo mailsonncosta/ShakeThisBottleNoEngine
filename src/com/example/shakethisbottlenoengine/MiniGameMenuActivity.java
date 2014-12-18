@@ -1,5 +1,8 @@
 package com.example.shakethisbottlenoengine;
 
+import com.example.shakethisbottlenoengine.hitthecircle.HitTheCircleGameActivity;
+import com.example.shakethisbottlenoengine.memorizefast.MemorizeFastGameActivity;
+
 import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,7 +15,7 @@ import android.widget.Button;
 
 public class MiniGameMenuActivity extends ActionBarActivity {
 
-	private Button shakeItBt;
+	private Button shakeItBt, hitBt,memobt;
 	
 	private OnClickListener changingLayouts(final Class<?> nextLayout){
 		return new OnClickListener() {
@@ -32,8 +35,12 @@ public class MiniGameMenuActivity extends ActionBarActivity {
         
         
         shakeItBt = (Button) findViewById(R.id.shake_it_bt);
+        hitBt = (Button) findViewById(R.id.fake_game_bt);
+        memobt = (Button) findViewById(R.id.memorizefast_bt);
                 
-        shakeItBt.setOnClickListener(changingLayouts(MiniGameDifficultLevelActivity.class));
+        shakeItBt.setOnClickListener(changingLayouts(ShakeITGameActivity.class));
+        hitBt.setOnClickListener(changingLayouts(HitTheCircleGameActivity.class));
+        memobt.setOnClickListener(changingLayouts(MemorizeFastGameActivity.class));
         
     }
 

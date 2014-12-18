@@ -35,23 +35,23 @@
         android:layout_alignBaseline="@+id/shake_it_bt"
         android:layout_alignBottom="@+id/shake_it_bt"
         android:layout_toRightOf="@+id/shake_it_bt"
-        android:background="@drawable/shakeitbutton" />
+        android:background="@drawable/hitit" />
 
     <Button
-        android:id="@+id/Button01"
+        android:id="@+id/memorizefast_bt"
         android:layout_width="61dp"
         android:layout_height="61dp"
         android:layout_alignBaseline="@+id/fake_game_bt"
         android:layout_alignBottom="@+id/fake_game_bt"
         android:layout_toRightOf="@+id/fake_game_bt"
-        android:background="@drawable/shakeitbutton" />
+        android:background="@drawable/memo" />
 
     <Button
         android:id="@+id/Button02"
         android:layout_width="61dp"
         android:layout_height="61dp"
         android:layout_below="@+id/selectthegame_tx"
-        android:layout_toRightOf="@+id/Button01"
+        android:layout_toRightOf="@+id/memorizefast_bt"
         android:background="@drawable/shakeitbutton" />
 
     <Button
@@ -83,8 +83,8 @@
         android:id="@+id/Button06"
         android:layout_width="61dp"
         android:layout_height="61dp"
-        android:layout_below="@+id/Button01"
-        android:layout_toRightOf="@+id/Button01"
+        android:layout_below="@+id/memorizefast_bt"
+        android:layout_toRightOf="@+id/memorizefast_bt"
         android:background="@drawable/shakeitbutton" />
 
     <Button

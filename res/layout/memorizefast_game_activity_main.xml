@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MiniGameMenuActivity" >
+    tools:context=".MemorizeFastGameActivity" >
 
     <TextView
         android:id="@+id/textView1"
@@ -25,7 +25,7 @@
         android:layout_height="50dp"
         android:layout_alignLeft="@+id/memorize_fast_true_first"
         android:layout_below="@+id/memorize_fast_true_first"
-        android:layout_marginTop="38dp" 
+        android:layout_marginTop="38dp"
         android:background="@drawable/memorize_hit_choose" />
 
     <Button
@@ -34,7 +34,7 @@
         android:layout_height="50dp"
         android:layout_alignBottom="@+id/memorize_fast_chance_third"
         android:layout_alignRight="@+id/memorize_fast_true_fourth"
-		android:background="@drawable/memorize_hit_choose" />
+        android:background="@drawable/memorize_hit_choose" />
 
     <Button
         android:id="@+id/memorize_fast_color_red"
@@ -133,5 +133,21 @@
         android:layout_below="@+id/textView1"
         android:text="00"
         android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/teste_congrats"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_above="@+id/memorize_fast_true_second"
+        android:layout_toLeftOf="@+id/teste_fail"
+        android:text="congrats" />
+
+    <Button
+        android:id="@+id/teste_fail"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_alignRight="@+id/memorize_fast_true_third"
+        android:layout_alignTop="@+id/teste_congrats"
+        android:text="fail" />
 
 </RelativeLayout>

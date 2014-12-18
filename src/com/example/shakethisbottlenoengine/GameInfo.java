@@ -11,4 +11,18 @@ public interface GameInfo {
     public long getGameDuration();
 
     public long getGameVictoryPoints();
+
+	void setGameDuration(long time);
+
+	void setGameBonus(long bonus);
+
+	void setScorePoints(long points);
+
+	void setDifficulty(int difficulty);
+
+	long getGameBonus();
+
+	long getGameScore();
+
+	int getDifficulty();
 }

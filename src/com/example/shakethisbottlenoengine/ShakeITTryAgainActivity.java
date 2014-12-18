@@ -35,7 +35,7 @@ public class ShakeITTryAgainActivity extends ActionBarActivity {
         tryAgainBt   = (Button) findViewById(R.id.try_again_bt);
         backToMenuBt = (Button) findViewById(R.id.tya_btm_bt);
         
-        tryAgainBt.setOnClickListener(changingLayouts(ShakeITStartActivity.class));
+        tryAgainBt.setOnClickListener(changingLayouts(MiniGameMenuActivity.class));
         backToMenuBt.setOnClickListener(changingLayouts(MainActivity.class));
     }
 

@@ -34,9 +34,9 @@ private Button hardBt, normalBt, easyBt;
         normalBt = (Button) findViewById(R.id.normal_level_bt);
         easyBt   = (Button) findViewById(R.id.easy_level_bt);
         
-        hardBt.setOnClickListener(changingLayouts(ShakeITExplanationActivity.class));
-        normalBt.setOnClickListener(changingLayouts(ShakeITExplanationActivity.class));
-        easyBt.setOnClickListener(changingLayouts(ShakeITExplanationActivity.class));
+        hardBt.setOnClickListener(changingLayouts(MiniGameMenuActivity.class));
+        normalBt.setOnClickListener(changingLayouts(MiniGameMenuActivity.class));
+        easyBt.setOnClickListener(changingLayouts(MiniGameMenuActivity.class));
         
         
     }
