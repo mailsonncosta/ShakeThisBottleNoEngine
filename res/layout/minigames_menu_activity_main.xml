@@ -47,7 +47,7 @@
         android:background="@drawable/memo" />
 
     <Button
-        android:id="@+id/Button02"
+        android:id="@+id/fix_this_mess_button"
         android:layout_width="61dp"
         android:layout_height="61dp"
         android:layout_below="@+id/selectthegame_tx"

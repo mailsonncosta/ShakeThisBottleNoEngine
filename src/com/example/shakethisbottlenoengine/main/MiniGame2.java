@@ -15,7 +15,14 @@ public class MiniGame2 implements BaseGame {
 			"P", "Q", "R", "S", "T",
 			"U", "V", "W", "X", "Y", "Z"};
 	
-	private String[] letters2;
+
+	static final String[] letters3 = new String[] { 
+			"", "", "", "", "",
+			"", "", "", "", "",
+			"", "", "", "", "",
+			"", "", "", "", "",
+			"", "", "", "", "", ""};
+	
 
 	public MiniGame2() {
 		// TODO Auto-generated constructor stub
@@ -25,18 +32,30 @@ public class MiniGame2 implements BaseGame {
 	private String[] shuffle() 
 	{
 		// TODO Auto-generated method stub
-		letters2 = new String[26];
-		
+		//letters3 = new ArrayList<String>();
 		Random random = new Random();
 		
 		for(int i = 0; i < 26; i++)
 		{
 			int nextInt = random.nextInt(26);
-			letters2[i] = letters[nextInt];
+			while(containsLetter(letters[nextInt])){
+				nextInt = random.nextInt(26);
+			}
+			letters[i] = letters[nextInt];
 		}
 		
-		return letters2;
+		return letters3;
 		
+	}
+
+	private boolean containsLetter(String string) {
+		// TODO Auto-generated method stub
+		for(String s : letters3){
+			if(s.equals(string)){
+				return true;
+			}
+		}
+		return false;
 	}
 
 	@Override
@@ -88,10 +107,7 @@ public class MiniGame2 implements BaseGame {
 	}
 	
 	public String[] getShuffledLetters(){
-		if(letters2 == null){
-			throw new UnsupportedOperationException(); 
-		}
-		return letters2;
+		return letters3;
 	}
 
 }

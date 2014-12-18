@@ -2,6 +2,7 @@ package com.example.shakethisbottlenoengine;
 
 import com.example.shakethisbottlenoengine.hitthecircle.HitTheCircleGameActivity;
 import com.example.shakethisbottlenoengine.memorizefast.MemorizeFastGameActivity;
+import com.example.shakethisbottlenoengine.minigame4.FixThisMessStartActivity;
 
 import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
@@ -37,10 +38,12 @@ public class MiniGameMenuActivity extends ActionBarActivity {
         shakeItBt = (Button) findViewById(R.id.shake_it_bt);
         hitBt = (Button) findViewById(R.id.fake_game_bt);
         memobt = (Button) findViewById(R.id.memorizefast_bt);
+        View fixBt = findViewById(R.id.fix_this_mess_button);
                 
         shakeItBt.setOnClickListener(changingLayouts(ShakeITGameActivity.class));
         hitBt.setOnClickListener(changingLayouts(HitTheCircleGameActivity.class));
         memobt.setOnClickListener(changingLayouts(MemorizeFastGameActivity.class));
+        fixBt.setOnClickListener(changingLayouts(FixThisMessStartActivity.class));
         
     }
 

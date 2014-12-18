@@ -20,6 +20,8 @@ public class GameFactory {
 		// TODO - implement GameFactory.getMiniGame
 		if(minigame1.equals(MiniGameType.MINIGAME1)){
 			return new MiniGame1();
+		} else if(minigame1.equals(MiniGameType.MINIGAME2)){
+			return new MiniGame2();
 		} else {
 			throw new UnsupportedOperationException();
 		}

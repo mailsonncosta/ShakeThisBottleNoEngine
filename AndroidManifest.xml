@@ -31,8 +31,16 @@
         <activity android:name="ShakeITFailActivity"></activity>
         <activity android:name="ShakeITTryAgainActivity"></activity>
         <activity android:name=".minigame4.GameActivity"></activity>
-        <activity android:name=".minigame4.GameActivity2"></activity>  
-        
+        <activity android:name=".minigame4.GameActivity2"></activity>
+        <activity android:name=".minigame4.FixThisMessStartActivity">
+<!--         	<intent-filter> -->
+<!--                 <action android:name="android.intent.action.MAIN" /> -->
+
+<!--                 <category android:name="android.intent.category.LAUNCHER" /> -->
+<!--             </intent-filter> -->
+        </activity>
+        <activity android:name=".minigame4.FixThisMessGameActivity"></activity>
+        <activity android:name=".minigame4.FixThisMessGameOverActivity"></activity>
     </application>
 
 </manifest>
